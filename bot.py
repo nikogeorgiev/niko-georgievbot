@@ -29,8 +29,7 @@ def ver_claims(reffile, property, target):
                         print(itemwd["labels"]["en"], " HAS Start Time - ", refdata["Year"][index])
                     except KeyError:
                         print(item, " DOES NOT HAVE EN LABEL, ADDING LABEL ", refdata["name"][index])
-                        print(item, " HAS Start Time - ", refdata["Year"][index])
-                        label.editLabels(label = {'en' : refdata['name'][index]})
+                        print(item, " HAS Start Time - ", refdata["Year"][index]
                 else:
                     try:
                         print(itemwd["labels"]["en"], " DOES NOT HAVE Start Time - ", refdata["Year"][index])
